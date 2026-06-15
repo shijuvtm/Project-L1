@@ -1,0 +1,30 @@
+/* index.css — global reset + design tokens */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+:root {
+  --color-bg:        #f1f5f9;
+  --color-surface:   #ffffff;
+  --color-border:    #e2e8f0;
+  --color-text:      #1e293b;
+  --color-muted:     #64748b;
+  --color-primary:   #6366f1;
+  --color-primary-d: #4f46e5;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+html, body, #root { height: 100%; margin: 0; }
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ReactFlow edge styling */
+.react-flow__edge-path { stroke: #94a3b8 !important; stroke-width: 2 !important; }
+.react-flow__edge.selected .react-flow__edge-path,
+.react-flow__edge.animated .react-flow__edge-path { stroke: #6366f1 !important; }
+.react-flow__connection-path { stroke: #6366f1; stroke-width: 2; stroke-dasharray: 5 3; }

@@ -1,0 +1,76 @@
+/* toolbar.css */
+
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  padding: 0 16px;
+  background: #0f172a;
+  border-bottom: 1px solid #1e293b;
+  height: 64px;             /* fixed height — never grows */
+  min-height: 64px;
+  max-height: 64px;
+  overflow-x: auto;         /* scroll horizontally if needed */
+  overflow-y: hidden;
+  flex-shrink: 0;           /* never let App shrink this */
+  user-select: none;
+  scrollbar-width: thin;
+  scrollbar-color: #334155 transparent;
+}
+
+.toolbar::-webkit-scrollbar { height: 4px; }
+.toolbar::-webkit-scrollbar-thumb { background: #334155; border-radius: 2px; }
+
+.toolbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  padding-right: 16px;
+  border-right: 1px solid #1e293b;
+}
+
+.toolbar__logo  { font-size: 20px; }
+
+.toolbar__name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #f8fafc;
+  white-space: nowrap;
+}
+
+.toolbar__groups {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+  overflow: visible;
+}
+
+.toolbar__group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.toolbar__group-label {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #475569;
+  white-space: nowrap;
+  padding-right: 4px;
+  border-right: 1px solid #1e293b;
+}
+
+.toolbar__nodes {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  flex-wrap: nowrap;
+}

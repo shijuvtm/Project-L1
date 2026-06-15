@@ -1,0 +1,34 @@
+/* textNode.css — extra styles specific to the Text node */
+
+.text-node {
+  /* smooth resize as content grows */
+  transition: width 0.1s ease, min-height 0.1s ease;
+}
+
+.text-node__textarea {
+  resize: none;       /* we control size programmatically */
+  overflow: hidden;
+  min-height: 28px;
+  line-height: 1.55;
+}
+
+/* Variable pills row */
+.text-node__vars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 2px;
+}
+
+.text-node__var-pill {
+  display: inline-flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 600;
+  color: #4f46e5;
+  background: #eef2ff;
+  border: 1px solid #c7d2fe;
+  border-radius: 999px;
+  padding: 2px 9px;
+  letter-spacing: 0.2px;
+}

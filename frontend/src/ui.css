@@ -1,0 +1,27 @@
+/* ui.css */
+
+.pipeline-canvas {
+  flex: 1;          /* fill remaining height between toolbar and footer */
+  min-height: 0;    /* critical — allows flex child to shrink below content size */
+  width: 100%;
+  position: relative;
+  background: #f1f5f9;
+}
+
+/* make sure ReactFlow fills the wrapper fully */
+.pipeline-canvas .react-flow {
+  width: 100%;
+  height: 100%;
+}
+
+.rf-controls {
+  border-radius: 8px !important;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.12) !important;
+}
+
+.rf-minimap {
+  border-radius: 8px !important;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.10) !important;
+}

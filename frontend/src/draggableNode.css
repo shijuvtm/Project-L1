@@ -1,0 +1,29 @@
+/* draggableNode.css */
+
+.drag-node {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: grab;
+  padding: 0 12px;
+  height: 36px;
+  border-radius: 8px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  color: #e2e8f0;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background 0.15s, border-color 0.15s, transform 0.1s;
+}
+
+.drag-node:hover {
+  background: #334155;
+  border-color: #6366f1;
+  transform: translateY(-1px);
+}
+
+.drag-node:active { cursor: grabbing; transform: scale(0.97); }
+
+.drag-node__icon { font-size: 14px; line-height: 1; }
